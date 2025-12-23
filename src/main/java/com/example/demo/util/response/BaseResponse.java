@@ -1,6 +1,7 @@
 package com.example.demo.util.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -27,16 +28,19 @@ public class BaseResponse<T> implements Serializable {
      * 0: 成功
      * 其他: 失败，具体错误码参考ResponseCode枚举
      */
+    @JsonProperty("code")
     private Integer code;
 
     /**
      * 响应消息
      */
+    @JsonProperty("msg")
     private String message;
 
     /**
      * 响应数据
      */
+    @JsonProperty("data")
     private T data;
 
     /**

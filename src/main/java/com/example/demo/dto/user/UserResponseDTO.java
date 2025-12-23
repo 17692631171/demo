@@ -1,4 +1,4 @@
-package com.example.demo.dto;
+package com.example.demo.dto.user;
 
 import lombok.Data; /**
  * 用户响应DTO（不返回密码等敏感信息）

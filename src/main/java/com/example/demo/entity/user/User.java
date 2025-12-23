@@ -1,4 +1,6 @@
-package com.example.demo.entity;
+package com.example.demo.entity.user;
+
+import com.example.demo.entity.BaseEntity;
 
 public class User extends BaseEntity {
     private String name;

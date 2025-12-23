@@ -15,6 +15,7 @@ spring:
       name: admin
       password: admin123
       roles: ADMIN
+
   devtools:
     restart:
       enabled: true
@@ -25,6 +26,25 @@ spring:
     # 启用配置热重载
     main:
       allow-bean-definition-overriding: true
+
+    jackson:
+      # 日期格式
+      date-format: yyyy-MM-dd HH:mm:ss
+      time-zone: GMT+8
+
+      # 序列化配置
+      serialization:
+        write-dates-as-timestamps: false  # 不使用时间戳
+        write-date-timestamps-as-nanoseconds: false
+        fail-on-empty-beans: false
+
+      # 反序列化配置
+      deserialization:
+        fail-on-unknown-properties: false  # 忽略未知字段
+
+      # 属性配置
+      default-property-inclusion: non_null  # 全局忽略null字段
+      property-naming-strategy: SNAKE_CASE  # 使用蛇形命名法
 # MyBatis-Plus 配置
 mybatis-plus:
   # 全局配置
