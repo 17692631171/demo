@@ -1,0 +1,61 @@
+spring:
+  application:
+    name: demo1
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://152.136.175.244:3306/demo?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false&allowPublicKeyRetrieval=true
+    username: root
+    password: ZYchwl1314..
+    hikari:
+      connection-timeout: 30000 # 连接超时时间(毫秒)
+      maximum-pool-size: 20     # 连接池最大连接数
+      minimum-idle: 10          # 最小空闲连接数
+  security:
+    user: # 内存用户的备用配置 (优先级低于自定义UserDetailsService)
+      name: admin
+      password: admin123
+      roles: ADMIN
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/resources  # 监听资源文件变化
+      exclude: static/**,public/**,templates/**
+    livereload:
+      enabled: true
+    # 启用配置热重载
+    main:
+      allow-bean-definition-overriding: true
+# MyBatis-Plus 配置
+mybatis-plus:
+  # 全局配置
+  global-config:
+    db-config:
+      # 主键类型：ASSIGN_ID(雪花算法), AUTO(自增), INPUT(手动输入)
+      id-type: ASSIGN_ID
+      # 逻辑删除字段名
+      logic-delete-field: deleted
+      # 逻辑删除值（删除后为1）
+      logic-delete-value: 1
+      # 逻辑未删除值（未删除为0）
+      logic-not-delete-value: 0
+      # 字段策略：not_null(非null判断), ignored(忽略判断)
+      insert-strategy: not_null
+      update-strategy: not_null
+      # 表名前缀（可选）
+      # table-prefix: t_
+  # 配置类路径
+  type-aliases-package: com.yourpackage.entity
+  # mapper.xml 路径
+  mapper-locations: classpath*:mapper/**/*.xml
+  # 配置日志
+  configuration:
+    # 开启驼峰命名转换
+    map-underscore-to-camel-case: true
+    # 控制台日志输出
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 开启缓存
+    cache-enabled: true
+    # 延迟加载
+    lazy-loading-enabled: true
+    # 多个ResultSet是否允许访问
+    multiple-result-sets-enabled: true

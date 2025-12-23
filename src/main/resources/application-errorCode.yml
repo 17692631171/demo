@@ -1,0 +1,91 @@
+error-code:
+  # ==================== 系统通用错误码 ====================
+  system:
+    success:
+      code: 200
+      message: 操作成功
+    fail:
+      code: 500
+      message: 操作失败
+    bad-request:
+      code: 400
+      message: 请求参数错误
+    unauthorized:
+      code: 401
+      message: 未授权，请先登录
+    forbidden:
+      code: 403
+      message: 禁止访问，权限不足
+    not-found:
+      code: 404
+      message: 请求的资源不存在
+    method-not-allowed:
+      code: 405
+      message: 请求方法不允许
+    server-error:
+      code: 500
+      message: 服务器内部错误
+    service-unavailable:
+      code: 503
+      message: 服务暂时不可用
+
+  # ==================== 业务错误码 ====================
+  business:
+    # 用户相关 1000-1999
+    user:
+      not-exist:
+        code: 1001
+        message: 用户不存在
+      password-error:
+        code: 1002
+        message: 密码错误
+      disabled:
+        code: 1003
+        message: 用户已被禁用
+      exist:
+        code: 1004
+        message: 用户已存在
+      not-login:
+        code: 1005
+        message: 用户未登录
+    # 权限相关 2000-2999
+    permission:
+      denied:
+        code: 2001
+        message: 权限不足
+      token-invalid:
+        code: 2002
+        message: Token无效
+      token-expired:
+        code: 2003
+        message: Token已过期
+    # 数据相关 3000-3999
+    data:
+      not-found:
+        code: 3001
+        message: 数据不存在
+      exist:
+        code: 3002
+        message: 数据已存在
+      validate-fail:
+        code: 3003
+        message: 数据验证失败
+    # 文件相关 4000-4999
+    file:
+      upload-fail:
+        code: 4001
+        message: 文件上传失败
+      too-large:
+        code: 4002
+        message: 文件大小超过限制
+      type-not-allowed:
+        code: 4003
+        message: 文件类型不允许
+    # 系统错误 9000-9999
+    system:
+      error:
+        code: 9001
+        message: 系统错误
+      unknown-error:
+        code: 9999
+        message: 未知错误
