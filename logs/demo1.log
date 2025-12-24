@@ -1,0 +1,351 @@
+2025-12-24 10:43:53.814 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 10:43:53.840 [restartedMain] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 19952 (D:\workspace\java项目\demo10\target\classes started by MyPC in D:\workspace\java项目\demo10)
+2025-12-24 10:43:53.841 [restartedMain] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 10:43:54.844 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:43:54.845 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 10:43:54.846 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-12-24 10:43:54.890 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 10:43:55.618 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@55f0e67d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b067427, org.springframework.security.web.context.SecurityContextHolderFilter@209ded1f, org.springframework.security.web.header.HeaderWriterFilter@5d550cf0, org.springframework.security.web.csrf.CsrfFilter@393683b9, org.springframework.security.web.authentication.logout.LogoutFilter@6a167985, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1925f1b8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7cf6aea7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3b743f2c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6c43883b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2bacea32, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d35dd0a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6843f889, org.springframework.security.web.access.ExceptionTranslationFilter@6c14e3a0, org.springframework.security.web.access.intercept.AuthorizationFilter@2cedc31c]
+2025-12-24 10:43:55.667 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:43:55.687 [restartedMain] INFO  com.example.demo.Demo1Application - Started Demo1Application in 2.266 seconds (process running for 2.708)
+2025-12-24 10:44:27.262 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 10:44:27.262 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-24 10:44:27.262 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-24 10:49:49.588 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:49:49.588 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-12-24 10:49:49.589 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-12-24 10:49:49.599 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:49:49.602 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:49:49.667 [restartedMain] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 19952 (D:\workspace\java项目\demo10\target\classes started by MyPC in D:\workspace\java项目\demo10)
+2025-12-24 10:49:49.667 [restartedMain] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 10:49:49.831 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:49:49.832 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 10:49:49.832 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-12-24 10:49:49.838 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 10:49:50.108 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2a802699, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@221bd936, org.springframework.security.web.context.SecurityContextHolderFilter@46315155, org.springframework.security.web.header.HeaderWriterFilter@43688a73, org.springframework.security.web.csrf.CsrfFilter@5ddedbc9, org.springframework.security.web.authentication.logout.LogoutFilter@308a79ad, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@30f4742a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@478aecc4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@31ddac7b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@53d02488, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d9adac9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4036cda3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63fb2aac, org.springframework.security.web.access.ExceptionTranslationFilter@71db8b42, org.springframework.security.web.access.intercept.AuthorizationFilter@565bc906]
+2025-12-24 10:49:50.130 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:49:50.134 [restartedMain] INFO  com.example.demo.Demo1Application - Started Demo1Application in 0.5 seconds (process running for 357.155)
+2025-12-24 10:50:31.256 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:50:31.257 [Thread-7] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-12-24 10:50:31.260 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:50:31.263 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:50:31.370 [restartedMain] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 19952 (D:\workspace\java项目\demo10\target\classes started by MyPC in D:\workspace\java项目\demo10)
+2025-12-24 10:50:31.370 [restartedMain] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 10:50:31.762 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:50:31.763 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 10:50:31.763 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-12-24 10:50:31.777 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 10:50:32.126 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@11f6e2a8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a2409ab, org.springframework.security.web.context.SecurityContextHolderFilter@55dcfe14, org.springframework.security.web.header.HeaderWriterFilter@4eff0168, org.springframework.security.web.csrf.CsrfFilter@22e3b435, org.springframework.security.web.authentication.logout.LogoutFilter@52f44d0e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@714e4156, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7f8c60b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@9e3ad48, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1a2fe4c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a21aa86, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@313a6505, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f2562a6, org.springframework.security.web.access.ExceptionTranslationFilter@4a923a55, org.springframework.security.web.access.intercept.AuthorizationFilter@710d489d]
+2025-12-24 10:50:32.153 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:50:32.161 [restartedMain] INFO  com.example.demo.Demo1Application - Started Demo1Application in 0.847 seconds (process running for 399.182)
+2025-12-24 10:50:34.592 [Thread-11] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:50:34.592 [Thread-11] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-12-24 10:50:34.595 [Thread-11] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:50:34.596 [Thread-11] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:50:34.668 [restartedMain] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 19952 (D:\workspace\java项目\demo10\target\classes started by MyPC in D:\workspace\java项目\demo10)
+2025-12-24 10:50:34.669 [restartedMain] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 10:50:34.857 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:50:34.857 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 10:50:34.857 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-12-24 10:50:34.866 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 10:50:35.043 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6fc790fa, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9b79d23, org.springframework.security.web.context.SecurityContextHolderFilter@3321616c, org.springframework.security.web.header.HeaderWriterFilter@287292ce, org.springframework.web.filter.CorsFilter@5ce35623, org.springframework.security.web.authentication.logout.LogoutFilter@7730b20f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9f056f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@737a88c5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@68d25985, org.springframework.security.web.access.ExceptionTranslationFilter@36898f36, org.springframework.security.web.access.intercept.AuthorizationFilter@72c8c9ab]
+2025-12-24 10:50:35.253 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:50:35.261 [restartedMain] INFO  com.example.demo.Demo1Application - Started Demo1Application in 0.62 seconds (process running for 402.283)
+2025-12-24 10:50:36.671 [Thread-15] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:50:36.671 [Thread-15] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-12-24 10:50:36.673 [Thread-15] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:50:36.676 [Thread-15] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:50:36.720 [restartedMain] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 19952 (D:\workspace\java项目\demo10\target\classes started by MyPC in D:\workspace\java项目\demo10)
+2025-12-24 10:50:36.720 [restartedMain] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 10:50:36.856 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:50:36.857 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 10:50:36.857 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-12-24 10:50:36.864 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 10:50:37.027 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2c906720, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ca8386a, org.springframework.security.web.context.SecurityContextHolderFilter@9a88f5d, org.springframework.security.web.header.HeaderWriterFilter@336f45b0, org.springframework.web.filter.CorsFilter@5692d0b, org.springframework.security.web.authentication.logout.LogoutFilter@1b6b727a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a310a41, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f7f4914, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1fc7b003, org.springframework.security.web.access.ExceptionTranslationFilter@27124d2e, org.springframework.security.web.access.intercept.AuthorizationFilter@5c78d99c]
+2025-12-24 10:50:37.120 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:50:37.125 [restartedMain] INFO  com.example.demo.Demo1Application - Started Demo1Application in 0.423 seconds (process running for 404.146)
+2025-12-24 10:51:15.164 [Thread-19] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:51:15.165 [Thread-19] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-12-24 10:51:15.167 [Thread-19] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:51:15.168 [Thread-19] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:51:15.235 [restartedMain] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 19952 (D:\workspace\java项目\demo10\target\classes started by MyPC in D:\workspace\java项目\demo10)
+2025-12-24 10:51:15.235 [restartedMain] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 10:51:15.434 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:51:15.434 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 10:51:15.434 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-12-24 10:51:15.442 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 10:51:15.599 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@767b4653, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29dd287, org.springframework.security.web.context.SecurityContextHolderFilter@2b60ea5b, org.springframework.security.web.header.HeaderWriterFilter@c5d5f1, org.springframework.web.filter.CorsFilter@1a3f584, org.springframework.security.web.authentication.logout.LogoutFilter@60129013, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26b7ea79, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6248a21e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d160b8c, org.springframework.security.web.access.ExceptionTranslationFilter@6e0547c6, org.springframework.security.web.access.intercept.AuthorizationFilter@5e904f2b]
+2025-12-24 10:51:15.687 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:51:15.693 [restartedMain] INFO  com.example.demo.Demo1Application - Started Demo1Application in 0.497 seconds (process running for 442.715)
+2025-12-24 10:51:21.758 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 10:51:21.758 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-24 10:51:21.759 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-24 10:53:00.793 [Thread-23] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:53:00.793 [Thread-23] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-12-24 10:53:00.793 [Thread-23] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-12-24 10:53:00.796 [Thread-23] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:53:00.797 [Thread-23] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:53:00.867 [restartedMain] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 19952 (D:\workspace\java项目\demo10\target\classes started by MyPC in D:\workspace\java项目\demo10)
+2025-12-24 10:53:00.868 [restartedMain] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 10:53:01.069 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:53:01.069 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 10:53:01.069 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-12-24 10:53:01.076 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 10:53:01.113 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webConfig' defined in file [D:\workspace\java项目\demo10\target\classes\com\example\demo\config\WebConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.example.demo.config.interceptor.LogInterceptor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-12-24 10:53:01.113 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-12-24 10:53:01.132 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.example.demo.config.WebConfig required a bean of type 'com.example.demo.config.interceptor.LogInterceptor' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.config.interceptor.LogInterceptor' in your configuration.
+
+2025-12-24 10:53:02.643 [restartedMain] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 19952 (D:\workspace\java项目\demo10\target\classes started by MyPC in D:\workspace\java项目\demo10)
+2025-12-24 10:53:02.645 [restartedMain] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 10:53:02.908 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:53:02.909 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 10:53:02.909 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-12-24 10:53:02.918 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 10:53:03.116 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@299ac201, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@428d75d9, org.springframework.security.web.context.SecurityContextHolderFilter@2ee4fa96, org.springframework.security.web.header.HeaderWriterFilter@6942dd48, org.springframework.web.filter.CorsFilter@37b537c7, org.springframework.security.web.authentication.logout.LogoutFilter@20c966a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68f4f034, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56a73646, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7dbd8abe, org.springframework.security.web.access.ExceptionTranslationFilter@61dbf6ca, org.springframework.security.web.access.intercept.AuthorizationFilter@94976]
+2025-12-24 10:53:03.218 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:53:03.225 [restartedMain] INFO  com.example.demo.Demo1Application - Started Demo1Application in 0.659 seconds (process running for 550.245)
+2025-12-24 10:53:03.275 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 10:53:03.275 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-24 10:53:03.276 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-24 10:53:38.214 [Thread-27] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:53:38.214 [Thread-27] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-12-24 10:53:38.214 [Thread-27] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-12-24 10:53:38.216 [Thread-27] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:53:38.217 [Thread-27] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:53:38.266 [restartedMain] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 19952 (D:\workspace\java项目\demo10\target\classes started by MyPC in D:\workspace\java项目\demo10)
+2025-12-24 10:53:38.266 [restartedMain] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 10:53:38.374 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Unable to load cache item
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:75)
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34)
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:130)
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:317)
+	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:562)
+	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:407)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:138)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:109)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:531)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:308)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:358)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:150)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:779)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.Demo1Application.main(Demo1Application.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.NoClassDefFoundError: com/example/demo/config/interceptor/LogInterceptor
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3373)
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2555)
+	at org.springframework.cglib.proxy.Enhancer.generateClass(Enhancer.java:655)
+	at org.springframework.cglib.transform.TransformingClassGenerator.generateClass(TransformingClassGenerator.java:35)
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:26)
+	at org.springframework.cglib.core.ClassLoaderAwareGeneratorStrategy.generate(ClassLoaderAwareGeneratorStrategy.java:57)
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:366)
+	at org.springframework.cglib.proxy.Enhancer.generate(Enhancer.java:575)
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.lambda$new$1(AbstractClassGenerator.java:107)
+	at org.springframework.cglib.core.internal.LoadingCache.lambda$createEntry$1(LoadingCache.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:57)
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.demo.config.interceptor.LogInterceptor
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 38 common frames omitted
+2025-12-24 10:53:39.806 [restartedMain] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 19952 (D:\workspace\java项目\demo10\target\classes started by MyPC in D:\workspace\java项目\demo10)
+2025-12-24 10:53:39.806 [restartedMain] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 10:53:39.952 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:53:39.953 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 10:53:39.953 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-12-24 10:53:39.959 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 10:53:40.151 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c3c0727, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@775afb7a, org.springframework.security.web.context.SecurityContextHolderFilter@1c45641b, org.springframework.security.web.header.HeaderWriterFilter@5fe1ef8e, org.springframework.web.filter.CorsFilter@47984995, org.springframework.security.web.authentication.logout.LogoutFilter@3e18b0ba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7dceeb88, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59876115, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fbd320e, org.springframework.security.web.access.ExceptionTranslationFilter@782b88cc, org.springframework.security.web.access.intercept.AuthorizationFilter@566dce16]
+2025-12-24 10:53:40.237 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:53:40.241 [restartedMain] INFO  com.example.demo.Demo1Application - Started Demo1Application in 0.444 seconds (process running for 587.263)
+2025-12-24 11:13:57.611 [Thread-34] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:13:57.611 [Thread-34] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-12-24 11:13:57.613 [Thread-34] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:13:57.614 [Thread-34] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:13:57.671 [restartedMain] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 19952 (D:\workspace\java项目\demo10\target\classes started by MyPC in D:\workspace\java项目\demo10)
+2025-12-24 11:13:57.671 [restartedMain] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 11:13:57.940 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:13:57.940 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 11:13:57.940 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-12-24 11:13:57.946 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 11:13:58.128 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@76338912, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22bed6d4, org.springframework.security.web.context.SecurityContextHolderFilter@7b79efd9, org.springframework.security.web.header.HeaderWriterFilter@60e6a6f8, org.springframework.web.filter.CorsFilter@1e0d044, org.springframework.security.web.authentication.logout.LogoutFilter@1e194808, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@778df102, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7f2ec5c8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@675e9a5f, org.springframework.security.web.access.ExceptionTranslationFilter@3a2651ba, org.springframework.security.web.access.intercept.AuthorizationFilter@f0d3ab5]
+2025-12-24 11:13:58.239 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:13:58.246 [restartedMain] INFO  com.example.demo.Demo1Application - Started Demo1Application in 0.597 seconds (process running for 1805.266)
+2025-12-24 11:14:26.117 [Thread-41] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:14:26.117 [Thread-41] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-12-24 11:14:26.119 [Thread-41] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:14:26.119 [Thread-41] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:14:26.199 [restartedMain] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 19952 (D:\workspace\java项目\demo10\target\classes started by MyPC in D:\workspace\java项目\demo10)
+2025-12-24 11:14:26.199 [restartedMain] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 11:14:26.428 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:14:26.428 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 11:14:26.428 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-12-24 11:14:26.440 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 11:14:26.590 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@42e7b10e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c593f1f, org.springframework.security.web.context.SecurityContextHolderFilter@69dd8791, org.springframework.security.web.header.HeaderWriterFilter@7d084dd, org.springframework.web.filter.CorsFilter@42600398, org.springframework.security.web.authentication.logout.LogoutFilter@4e240e9b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1944673, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48357aca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@491e74f8, org.springframework.security.web.access.ExceptionTranslationFilter@1c0abc4f, org.springframework.security.web.access.intercept.AuthorizationFilter@e20baa6]
+2025-12-24 11:14:26.694 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:14:26.697 [restartedMain] INFO  com.example.demo.Demo1Application - Started Demo1Application in 0.531 seconds (process running for 1833.719)
+2025-12-24 11:14:52.570 [Thread-45] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:14:52.570 [Thread-45] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-12-24 11:14:52.574 [Thread-45] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:14:52.575 [Thread-45] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:14:52.633 [restartedMain] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 19952 (D:\workspace\java项目\demo10\target\classes started by MyPC in D:\workspace\java项目\demo10)
+2025-12-24 11:14:52.634 [restartedMain] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 11:14:52.845 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:14:52.845 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 11:14:52.845 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-12-24 11:14:52.855 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 11:14:53.033 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@22485544, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4960a885, org.springframework.security.web.context.SecurityContextHolderFilter@4d3764e9, org.springframework.security.web.header.HeaderWriterFilter@2e4f66aa, org.springframework.web.filter.CorsFilter@49f237ca, org.springframework.security.web.authentication.logout.LogoutFilter@7e92ba22, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@145ce99e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ddbc0de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3da8e8bb, org.springframework.security.web.access.ExceptionTranslationFilter@71e7053e, org.springframework.security.web.access.intercept.AuthorizationFilter@e2f5027]
+2025-12-24 11:14:53.123 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:14:53.127 [restartedMain] INFO  com.example.demo.Demo1Application - Started Demo1Application in 0.516 seconds (process running for 1860.148)
+2025-12-24 11:15:10.861 [Thread-49] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:15:10.861 [Thread-49] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-12-24 11:15:10.863 [Thread-49] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:15:10.864 [Thread-49] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:15:10.927 [restartedMain] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 19952 (D:\workspace\java项目\demo10\target\classes started by MyPC in D:\workspace\java项目\demo10)
+2025-12-24 11:15:10.927 [restartedMain] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 11:15:11.161 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:15:11.161 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 11:15:11.161 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-12-24 11:15:11.169 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 11:15:11.455 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6cfb518e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1edfd1fb, org.springframework.security.web.context.SecurityContextHolderFilter@4efcd49c, org.springframework.security.web.header.HeaderWriterFilter@487a64f2, org.springframework.web.filter.CorsFilter@791bd5e5, org.springframework.security.web.authentication.logout.LogoutFilter@2c4bd3b1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36bb0b52, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ffd0567, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@669e97e2, org.springframework.security.web.access.ExceptionTranslationFilter@13175f15, org.springframework.security.web.access.intercept.AuthorizationFilter@35e54ff3]
+2025-12-24 11:15:11.696 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:15:11.700 [restartedMain] INFO  com.example.demo.Demo1Application - Started Demo1Application in 0.8 seconds (process running for 1878.721)
+2025-12-24 11:15:13.118 [Thread-53] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:15:13.118 [Thread-53] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-12-24 11:15:13.119 [Thread-53] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:15:13.120 [Thread-53] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:15:13.173 [restartedMain] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 19952 (D:\workspace\java项目\demo10\target\classes started by MyPC in D:\workspace\java项目\demo10)
+2025-12-24 11:15:13.173 [restartedMain] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 11:15:13.319 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:15:13.319 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 11:15:13.319 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-12-24 11:15:13.326 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 11:15:13.475 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@59628235, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74d662c8, org.springframework.security.web.context.SecurityContextHolderFilter@7613c211, org.springframework.security.web.header.HeaderWriterFilter@1da2534f, org.springframework.web.filter.CorsFilter@1fcf322d, org.springframework.security.web.authentication.logout.LogoutFilter@4ecc6aa3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13667b42, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2910317a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47ec8985, org.springframework.security.web.access.ExceptionTranslationFilter@4aee1440, org.springframework.security.web.access.intercept.AuthorizationFilter@4663d312]
+2025-12-24 11:15:13.563 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 11:15:13.569 [restartedMain] INFO  com.example.demo.Demo1Application - Started Demo1Application in 0.417 seconds (process running for 1880.59)
+2025-12-24 14:14:24.655 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[EXCEPTION_FILE] - 'FileNamePattern' option has the same value "logs/exception-%d{yyyy-MM-dd}.%i.log" as that given for appender [EXCEPTION_FILE] defined earlier.
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[EXCEPTION_FILE] - Collisions detected with FileAppender/RollingAppender instances defined earlier. Aborting.
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[EXCEPTION_FILE] - For more information, please visit http://logback.qos.ch/codes.html#earlier_fa_collision
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:174)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:167)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:133)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.Demo1Application.main(Demo1Application.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[EXCEPTION_FILE] - 'FileNamePattern' option has the same value "logs/exception-%d{yyyy-MM-dd}.%i.log" as that given for appender [EXCEPTION_FILE] defined earlier.
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[EXCEPTION_FILE] - Collisions detected with FileAppender/RollingAppender instances defined earlier. Aborting.
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[EXCEPTION_FILE] - For more information, please visit http://logback.qos.ch/codes.html#earlier_fa_collision
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:275)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:253)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithSpecificConfig(AbstractLoggingSystem.java:66)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:57)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:189)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:335)
+	... 24 common frames omitted
+2025-12-24 14:15:15.265 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[EXCEPTION_FILE] - 'FileNamePattern' option has the same value "logs/exception-%d{yyyy-MM-dd}.%i.log" as that given for appender [EXCEPTION_FILE] defined earlier.
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[EXCEPTION_FILE] - Collisions detected with FileAppender/RollingAppender instances defined earlier. Aborting.
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[EXCEPTION_FILE] - For more information, please visit http://logback.qos.ch/codes.html#earlier_fa_collision
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:174)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:167)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:133)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.demo.Demo1Application.main(Demo1Application.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[EXCEPTION_FILE] - 'FileNamePattern' option has the same value "logs/exception-%d{yyyy-MM-dd}.%i.log" as that given for appender [EXCEPTION_FILE] defined earlier.
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[EXCEPTION_FILE] - Collisions detected with FileAppender/RollingAppender instances defined earlier. Aborting.
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[EXCEPTION_FILE] - For more information, please visit http://logback.qos.ch/codes.html#earlier_fa_collision
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:275)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:253)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithSpecificConfig(AbstractLoggingSystem.java:66)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:57)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:189)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:335)
+	... 24 common frames omitted
+2025-12-24 14:16:46.188 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 14:16:46.223 [restartedMain] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 12836 (D:\workspace\java项目\demo10\target\classes started by MyPC in D:\workspace\java项目\demo10)
+2025-12-24 14:16:46.223 [restartedMain] DEBUG com.example.demo.Demo1Application - Running with Spring Boot v3.1.5, Spring v6.0.13
+2025-12-24 14:16:46.223 [restartedMain] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 14:16:47.439 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 14:16:47.441 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 14:16:47.441 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-12-24 14:16:47.486 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 14:16:48.166 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@41159b0e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@40a306a5, org.springframework.security.web.context.SecurityContextHolderFilter@4bd2ffb9, org.springframework.security.web.header.HeaderWriterFilter@6b8b0c, org.springframework.web.filter.CorsFilter@44124ad9, org.springframework.security.web.authentication.logout.LogoutFilter@3b84e45d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c9ee1fd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@604d89af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e328104, org.springframework.security.web.access.ExceptionTranslationFilter@2c7ba420, org.springframework.security.web.access.intercept.AuthorizationFilter@69fdb919]
+2025-12-24 14:16:48.412 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 14:16:48.441 [restartedMain] INFO  com.example.demo.Demo1Application - Started Demo1Application in 2.668 seconds (process running for 3.273)
+2025-12-24 14:17:12.911 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 14:17:12.911 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-24 14:17:12.912 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
