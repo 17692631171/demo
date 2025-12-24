@@ -26,6 +26,7 @@ spring:
     # 启用配置热重载
     main:
       allow-bean-definition-overriding: true
+      banner-mode: off
 
     jackson:
       # 日期格式
@@ -37,6 +38,12 @@ spring:
         write-dates-as-timestamps: false  # 不使用时间戳
         write-date-timestamps-as-nanoseconds: false
         fail-on-empty-beans: false
+      web:
+        resources:
+          add-mappings: false
+
+      mvc:
+        throw-exception-if-no-handler-found: true
 
       # 反序列化配置
       deserialization:
@@ -45,6 +52,15 @@ spring:
       # 属性配置
       default-property-inclusion: non_null  # 全局忽略null字段
       property-naming-strategy: SNAKE_CASE  # 使用蛇形命名法
+
+# 应用自定义配置
+app:
+  # 日志保留天数
+  log:
+    max-history: 30
+  # 请求超时时间（毫秒）
+  request:
+    timeout-warning: 3000
 # MyBatis-Plus 配置
 mybatis-plus:
   # 全局配置
@@ -69,13 +85,35 @@ mybatis-plus:
   mapper-locations: classpath*:mapper/**/*.xml
   # 配置日志
   configuration:
-    # 开启驼峰命名转换
-    map-underscore-to-camel-case: true
-    # 控制台日志输出
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-    # 开启缓存
-    cache-enabled: true
-    # 延迟加载
-    lazy-loading-enabled: true
-    # 多个ResultSet是否允许访问
-    multiple-result-sets-enabled: true
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl  # 使用Slf4j日志
+    global-config:
+      db-config:
+        id-type: auto
+      banner: false
+
+# 日志配置
+logging:
+  config: classpath:logback-spring.xml
+  # 控制台彩色输出
+  pattern:
+    console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr([%thread]){magenta} %clr(%-5level){cyan} %clr(%logger{36}){blue} - %msg%n"
+  # 文件输出路径
+  file:
+    path: logs
+  # 日志级别
+  level:
+    root: INFO
+    com.example.demo: DEBUG
+    org.springframework: WARN
+    org.springframework.security: INFO
+    org.springframework.web: INFO
+    com.baomidou.mybatisplus: DEBUG
+
+  # 异常处理配置
+  exception:
+    # 是否在生产环境隐藏详细错误信息
+    hide-details-in-production: true
+    # 是否记录完整的异常堆栈
+    log-stack-trace: true
+    # 异常日志级别
+    log-level: WARN

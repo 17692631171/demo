@@ -8,6 +8,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Map;
 
 /**
  * 统一API响应类
@@ -164,10 +165,46 @@ public class BaseResponse<T> implements Serializable {
         return new BaseResponse<>(responseCode.getCode(), message, data);
     }
 
+    // ==================== 参数校验异常专用方法 ====================
+
+    /**
+     * 参数校验失败（返回 Map<String, String> 类型）
+     * 用于全局异常处理器的参数校验异常
+     */
+    public static BaseResponse<Map<String, String>> paramValidationError(Map<String, String> errors) {
+        BaseResponse<Map<String, String>> response = new BaseResponse<>(
+                ResponseCode.PARAM_ERROR.getCode(),
+                ResponseCode.PARAM_ERROR.getMessage(),
+                null);
+        response.setErrorDetail(errors);
+        return response;
+    }
+
+    /**
+     * 参数校验失败（自定义消息）
+     */
+    public static BaseResponse<Map<String, String>> paramValidationError(String message, Map<String, String> errors) {
+        BaseResponse<Map<String, String>> response = new BaseResponse<>(
+                ResponseCode.PARAM_ERROR.getCode(),
+                message,
+                null);
+        response.setErrorDetail(errors);
+        return response;
+    }
+
+    /**
+     * 参数校验失败（自定义错误码和消息）
+     */
+    public static BaseResponse<Map<String, String>> paramValidationError(Integer code, String message, Map<String, String> errors) {
+        BaseResponse<Map<String, String>> response = new BaseResponse<>(code, message, null);
+        response.setErrorDetail(errors);
+        return response;
+    }
+
     // ==================== 常用便捷方法 ====================
 
     /**
-     * 参数错误
+     * 参数错误（通用方法）
      */
     public static <T> BaseResponse<T> paramError() {
         return fail(ResponseCode.PARAM_ERROR);
