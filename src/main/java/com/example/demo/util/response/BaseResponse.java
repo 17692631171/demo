@@ -1,5 +1,6 @@
 package com.example.demo.util.response;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
@@ -274,6 +275,7 @@ public class BaseResponse<T> implements Serializable {
     /**
      * 获取响应数据，如果成功则返回数据，否则抛出异常
      */
+    @JsonIgnore
     public T getOrThrow() {
         if (!isSuccess()) {
             throw new RuntimeException("请求失败: " + this.message + " (错误码: " + this.code + ")");
@@ -323,16 +325,22 @@ public class BaseResponse<T> implements Serializable {
 
     /**
      * 转换为JSON字符串
+ * 重写Object类的toString()方法，用于将BaseResponse对象转换为字符串表示形式
+ * 返回的字符串包含对象的各个属性值，格式为JSON风格
+ *
+ * @return 返回一个包含对象所有属性值的字符串，格式为"BaseResponse{属性1=值1, 属性2=值2, ...}"
      */
-    @Override
+    @Override  // 表示重写父类的方法
     public String toString() {
-        return "BaseResponse{" +
-                "code=" + code +
-                ", message='" + message + '\'' +
-                ", data=" + data +
-                ", timestamp='" + timestamp + '\'' +
-                ", path='" + path + '\'' +
-                ", requestId='" + requestId + '\'' +
-                '}';
+
+    // 使用字符串拼接方式构建返回字符串
+        return "BaseResponse{" +  // 返回字符串的开始部分，包含类名
+                "code=" + code +  // 拼接code属性值
+                ", message='" + message + '\'' +  // 拼接message属性值，使用单引号包围字符串
+                ", data=" + data +  // 拼接data属性值
+                ", timestamp='" + timestamp + '\'' +  // 拼接timestamp属性值，使用单引号包围字符串
+                ", path='" + path + '\'' +  // 拼接path属性值，使用单引号包围字符串
+                ", requestId='" + requestId + '\'' +  // 拼接requestId属性值，使用单引号包围字符串
+                '}';  // 返回字符串的结束部分
     }
 }

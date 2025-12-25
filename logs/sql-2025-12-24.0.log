@@ -1,0 +1,76 @@
+2025-12-24 10:43:54.311 |  | [SQL] Searching for mappers annotated with @Mapper
+2025-12-24 10:43:54.312 |  | [SQL] Using auto-configuration base package 'com.example.demo'
+2025-12-24 10:43:55.064 |  | [SQL] Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@1b4687be'
+2025-12-24 10:43:55.066 |  | [SQL] Property 'mapperLocations' was not specified.
+2025-12-24 10:43:55.081 |  | [SQL] Initialization Sequence datacenterId:4 workerId:26
+2025-12-24 10:43:55.441 |  | [SQL] Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-12-24 10:49:49.743 |  | [SQL] Searching for mappers annotated with @Mapper
+2025-12-24 10:49:49.743 |  | [SQL] Using auto-configuration base package 'com.example.demo'
+2025-12-24 10:49:49.905 |  | [SQL] Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@1bd1f829'
+2025-12-24 10:49:49.905 |  | [SQL] Property 'mapperLocations' was not specified.
+2025-12-24 10:49:50.023 |  | [SQL] Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-12-24 10:50:31.561 |  | [SQL] Searching for mappers annotated with @Mapper
+2025-12-24 10:50:31.561 |  | [SQL] Using auto-configuration base package 'com.example.demo'
+2025-12-24 10:50:31.860 |  | [SQL] Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@2a9fca49'
+2025-12-24 10:50:31.861 |  | [SQL] Property 'mapperLocations' was not specified.
+2025-12-24 10:50:32.018 |  | [SQL] Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-12-24 10:50:34.777 |  | [SQL] Searching for mappers annotated with @Mapper
+2025-12-24 10:50:34.777 |  | [SQL] Using auto-configuration base package 'com.example.demo'
+2025-12-24 10:50:34.912 |  | [SQL] Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@7220cbeb'
+2025-12-24 10:50:34.912 |  | [SQL] Property 'mapperLocations' was not specified.
+2025-12-24 10:50:35.151 |  | [SQL] Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-12-24 10:50:36.788 |  | [SQL] Searching for mappers annotated with @Mapper
+2025-12-24 10:50:36.788 |  | [SQL] Using auto-configuration base package 'com.example.demo'
+2025-12-24 10:50:36.906 |  | [SQL] Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@7482e2b'
+2025-12-24 10:50:36.906 |  | [SQL] Property 'mapperLocations' was not specified.
+2025-12-24 10:50:37.065 |  | [SQL] Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-12-24 10:51:15.327 |  | [SQL] Searching for mappers annotated with @Mapper
+2025-12-24 10:51:15.327 |  | [SQL] Using auto-configuration base package 'com.example.demo'
+2025-12-24 10:51:15.492 |  | [SQL] Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@609347b2'
+2025-12-24 10:51:15.492 |  | [SQL] Property 'mapperLocations' was not specified.
+2025-12-24 10:51:15.628 |  | [SQL] Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-12-24 10:53:00.972 |  | [SQL] Searching for mappers annotated with @Mapper
+2025-12-24 10:53:00.972 |  | [SQL] Using auto-configuration base package 'com.example.demo'
+2025-12-24 10:53:02.774 |  | [SQL] Searching for mappers annotated with @Mapper
+2025-12-24 10:53:02.774 |  | [SQL] Using auto-configuration base package 'com.example.demo'
+2025-12-24 10:53:02.985 |  | [SQL] Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@126f5936'
+2025-12-24 10:53:02.985 |  | [SQL] Property 'mapperLocations' was not specified.
+2025-12-24 10:53:03.154 |  | [SQL] Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-12-24 10:53:38.342 |  | [SQL] Searching for mappers annotated with @Mapper
+2025-12-24 10:53:38.342 |  | [SQL] Using auto-configuration base package 'com.example.demo'
+2025-12-24 10:53:39.882 |  | [SQL] Searching for mappers annotated with @Mapper
+2025-12-24 10:53:39.882 |  | [SQL] Using auto-configuration base package 'com.example.demo'
+2025-12-24 10:53:40.017 |  | [SQL] Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@58f32878'
+2025-12-24 10:53:40.017 |  | [SQL] Property 'mapperLocations' was not specified.
+2025-12-24 10:53:40.184 |  | [SQL] Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-12-24 11:13:57.760 |  | [SQL] Searching for mappers annotated with @Mapper
+2025-12-24 11:13:57.760 |  | [SQL] Using auto-configuration base package 'com.example.demo'
+2025-12-24 11:13:57.995 |  | [SQL] Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@261c3e84'
+2025-12-24 11:13:57.995 |  | [SQL] Property 'mapperLocations' was not specified.
+2025-12-24 11:13:58.170 |  | [SQL] Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-12-24 11:14:26.300 |  | [SQL] Searching for mappers annotated with @Mapper
+2025-12-24 11:14:26.300 |  | [SQL] Using auto-configuration base package 'com.example.demo'
+2025-12-24 11:14:26.484 |  | [SQL] Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@728240a8'
+2025-12-24 11:14:26.484 |  | [SQL] Property 'mapperLocations' was not specified.
+2025-12-24 11:14:26.624 |  | [SQL] Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-12-24 11:14:52.741 |  | [SQL] Searching for mappers annotated with @Mapper
+2025-12-24 11:14:52.741 |  | [SQL] Using auto-configuration base package 'com.example.demo'
+2025-12-24 11:14:52.903 |  | [SQL] Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@6ed73a56'
+2025-12-24 11:14:52.903 |  | [SQL] Property 'mapperLocations' was not specified.
+2025-12-24 11:14:53.070 |  | [SQL] Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-12-24 11:15:11.032 |  | [SQL] Searching for mappers annotated with @Mapper
+2025-12-24 11:15:11.032 |  | [SQL] Using auto-configuration base package 'com.example.demo'
+2025-12-24 11:15:11.242 |  | [SQL] Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@14760f3d'
+2025-12-24 11:15:11.242 |  | [SQL] Property 'mapperLocations' was not specified.
+2025-12-24 11:15:11.593 |  | [SQL] Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-12-24 11:15:13.247 |  | [SQL] Searching for mappers annotated with @Mapper
+2025-12-24 11:15:13.247 |  | [SQL] Using auto-configuration base package 'com.example.demo'
+2025-12-24 11:15:13.371 |  | [SQL] Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@12e1e5c4'
+2025-12-24 11:15:13.371 |  | [SQL] Property 'mapperLocations' was not specified.
+2025-12-24 11:15:13.508 |  | [SQL] Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-12-24 14:16:46.789 |  | [SQL] Searching for mappers annotated with @Mapper
+2025-12-24 14:16:46.790 |  | [SQL] Using auto-configuration base package 'com.example.demo'
+2025-12-24 14:16:47.697 |  | [SQL] Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@1246a9f'
+2025-12-24 14:16:47.698 |  | [SQL] Property 'mapperLocations' was not specified.
+2025-12-24 14:16:47.709 |  | [SQL] Initialization Sequence datacenterId:4 workerId:6
+2025-12-24 14:16:48.289 |  | [SQL] Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.

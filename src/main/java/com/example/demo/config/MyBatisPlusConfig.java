@@ -1,59 +1,75 @@
 package com.example.demo.config;
 
 import com.baomidou.mybatisplus.annotation.DbType;
+import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.BlockAttackInnerInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.OptimisticLockerInnerInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
+import org.apache.ibatis.reflection.MetaObject;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.time.LocalDateTime;
+
 /**
- * MyBatis-Plus 配置类
+ * MyBatis-Plus配置类
+ * 用于配置MyBatis-Plus的各种插件和自动填充功能
  */
 @Configuration
-public class MyBatisPlusConfig {
+public class MyBatisPlusConfig implements MetaObjectHandler {
 
     /**
-     * 插件配置
+     * 配置MyBatis-Plus的插件
+     * @return MybatisPlusInterceptor MyBatis-Plus插件拦截器
      */
     @Bean
     public MybatisPlusInterceptor mybatisPlusInterceptor() {
         MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
 
-        // 1. 分页插件（必须放在第一位）
-        PaginationInnerInterceptor paginationInterceptor = new PaginationInnerInterceptor();
-        paginationInterceptor.setDbType(DbType.MYSQL); // 数据库类型
-        paginationInterceptor.setMaxLimit(1000L); // 单页最大记录数
-        paginationInterceptor.setOverflow(true); // 超过最大页数后回到首页
+        // 分页插件
+        PaginationInnerInterceptor paginationInterceptor = new PaginationInnerInterceptor(DbType.MYSQL);
+        paginationInterceptor.setMaxLimit(1000L);
+        paginationInterceptor.setOverflow(true);
         interceptor.addInnerInterceptor(paginationInterceptor);
 
-        // 2. 乐观锁插件
+        // 乐观锁插件
         interceptor.addInnerInterceptor(new OptimisticLockerInnerInterceptor());
 
-        // 3. 防止全表更新/删除插件
+        // 防止全表更新与删除插件
         interceptor.addInnerInterceptor(new BlockAttackInnerInterceptor());
 
-        // 4. 多租户插件（如果需要）
-        // interceptor.addInnerInterceptor(new TenantLineInnerInterceptor(new TenantLineHandler() {
-        //     @Override
-        //     public Expression getTenantId() {
-        //         // 返回租户ID
-        //         return new StringValue(TenantContext.getCurrentTenantId());
-        //     }
-        //
-        //     @Override
-        //     public String getTenantIdColumn() {
-        //         return "tenant_id";
-        //     }
-        //
-        //     @Override
-        //     public boolean ignoreTable(String tableName) {
-        //         // 忽略不需要租户隔离的表
-        //         return "sys_tenant".equals(tableName);
-        //     }
-        // }));
-
         return interceptor;
+    }
+
+    @Override
+    public void insertFill(MetaObject metaObject) {
+        this.strictInsertFill(metaObject, "createTime", LocalDateTime.class, LocalDateTime.now());
+        this.strictInsertFill(metaObject, "updateTime", LocalDateTime.class, LocalDateTime.now());
+        this.strictInsertFill(metaObject, "createBy", Long.class, getCurrentUserId());
+        this.strictInsertFill(metaObject, "updateBy", Long.class, getCurrentUserId());
+    }
+
+    @Override
+    public void updateFill(MetaObject metaObject) {
+        this.strictUpdateFill(metaObject, "updateTime", LocalDateTime.class, LocalDateTime.now());
+        this.strictUpdateFill(metaObject, "updateBy", Long.class, getCurrentUserId());
+    }
+
+/**
+ * 获取当前登录用户的ID
+ * 该方法用于从Spring Security的安全上下文中获取当前用户的ID
+ * 
+ * @return Long 返回当前用户的ID，如果用户未登录则返回0L
+ *         注意：当前实现为临时方案，返回固定值0
+ *         在实际项目中应该从认证对象中获取真实用户ID
+ */
+    private Long getCurrentUserId() {
+        // 从SecurityContext获取当前用户ID的代码被注释掉
+        // 原本实现是通过Spring Security的安全上下文获取认证信息
+        // 然后从UserDetails对象中提取用户ID
+        // return SecurityContextHolder.getContext().getAuthentication() != null ?
+        //        ((UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getId() : 0L;
+        return 0L; // 暂时返回0，实际项目中需要实现
     }
 }

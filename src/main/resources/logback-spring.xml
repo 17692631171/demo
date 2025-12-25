@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration scan="true" scanPeriod="30 seconds">
-
+<configuration>
     <!-- 定义变量 -->
-    <property name="LOG_HOME" value="logs" />
-    <property name="APP_NAME" value="demo1" />
-    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" />
-    <property name="COLOR_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight([%thread]) %highlight(%-5level) %cyan(%logger{36}) - %msg%n" />
+    <property name="LOG_HOME" value="logs"/>
+    <property name="APP_NAME" value="demo"/>
+    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+    <property name="COLOR_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight([%thread]) %highlight(%-5level) %cyan(%logger{36}) - %msg%n"/>
 
-    <!-- 彩色控制台输出 -->
+    <!-- 控制台输出 -->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>${COLOR_PATTERN}</pattern>
@@ -15,7 +14,7 @@
         </encoder>
     </appender>
 
-    <!-- 主日志文件（按日滚动） -->
+    <!-- 主日志文件 -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_HOME}/${APP_NAME}.log</file>
         <encoder>
@@ -23,148 +22,66 @@
             <charset>UTF-8</charset>
         </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_HOME}/${APP_NAME}-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <maxHistory>30</maxHistory>
+            <fileNamePattern>${LOG_HOME}/${APP_NAME}-%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <maxHistory>${LOG_MAX_HISTORY:-30}</maxHistory>
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>100MB</maxFileSize>
+                <maxFileSize>${LOG_MAX_FILE_SIZE:-10MB}</maxFileSize>
             </timeBasedFileNamingAndTriggeringPolicy>
         </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
     </appender>
 
-    <!-- 错误日志文件（只记录ERROR级别） -->
+    <!-- 错误日志文件 -->
     <appender name="ERROR_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_HOME}/error.log</file>
         <encoder>
             <pattern>${LOG_PATTERN}</pattern>
             <charset>UTF-8</charset>
         </encoder>
-        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/error-%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+            <maxHistory>${LOG_MAX_HISTORY:-30}</maxHistory>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
         </filter>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_HOME}/error-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <maxHistory>30</maxHistory>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>50MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-        </rollingPolicy>
-    </appender>
-
-    <!-- 请求日志文件（记录所有请求信息） -->
-    <appender name="REQUEST_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${LOG_HOME}/request.log</file>
-        <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} | %X{ip} | %X{method} | %X{uri} | %X{params} | %X{userAgent} | %X{traceId} | %msg%n</pattern>
-            <charset>UTF-8</charset>
-        </encoder>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_HOME}/request-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <maxHistory>30</maxHistory>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>100MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-        </rollingPolicy>
     </appender>
 
     <!-- SQL日志文件 -->
     <appender name="SQL_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_HOME}/sql.log</file>
         <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} | %X{traceId} | [SQL] %msg%n</pattern>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [SQL] %msg%n</pattern>
             <charset>UTF-8</charset>
         </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_HOME}/sql-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <maxHistory>30</maxHistory>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>50MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
+            <fileNamePattern>${LOG_HOME}/sql-%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+            <maxHistory>${LOG_MAX_HISTORY:-7}</maxHistory>
         </rollingPolicy>
     </appender>
 
-    <!-- 业务日志文件 -->
-    <appender name="BUSINESS_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${LOG_HOME}/business.log</file>
-        <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} | %X{traceId} | [BUSINESS] %msg%n</pattern>
-            <charset>UTF-8</charset>
-        </encoder>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_HOME}/business-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <maxHistory>30</maxHistory>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>50MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-        </rollingPolicy>
-    </appender>
-
-    <!-- 异常日志文件 -->
-    <appender name="EXCEPTION_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${LOG_HOME}/exception.log</file>
-        <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} | %X{traceId} | %X{ip} | %X{method} | %X{uri} | %-5level | %logger{36} | %msg%n%throwable</pattern>
-            <charset>UTF-8</charset>
-        </encoder>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_HOME}/exception-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <maxHistory>30</maxHistory>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>50MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-        </rollingPolicy>
-    </appender>
-
-    <!-- ==================== Logger 配置 ==================== -->
-
-    <!-- 请求日志记录器 -->
-    <logger name="REQUEST_LOGGER" level="INFO" additivity="false">
-        <appender-ref ref="REQUEST_FILE" />
-        <appender-ref ref="CONSOLE" />
+    <!-- 日志记录器配置 -->
+    <logger name="com.example.demo" level="DEBUG" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
     </logger>
 
-    <!-- SQL日志记录器 -->
     <logger name="com.baomidou.mybatisplus" level="DEBUG" additivity="false">
-        <appender-ref ref="SQL_FILE" />
+        <appender-ref ref="SQL_FILE"/>
     </logger>
 
-    <!-- MyBatis SQL日志 -->
-    <logger name="com.baomidou.mybatisplus.core.MybatisSqlSessionFactoryBean" level="DEBUG" additivity="false">
-        <appender-ref ref="SQL_FILE" />
-    </logger>
+    <logger name="org.springframework.security" level="INFO"/>
+    <logger name="org.springframework.web" level="INFO"/>
+    <logger name="org.springframework" level="WARN"/>
 
-    <!-- 全局异常处理器日志 -->
-    <logger name="com.example.demo.config.handler.GlobalExceptionHandler" level="ERROR" additivity="false">
-        <appender-ref ref="EXCEPTION_FILE" />
-        <appender-ref ref="CONSOLE" />
-    </logger>
-
-    <!-- 业务日志记录器 -->
-    <logger name="com.example.demo.util.LogUtil" level="INFO" additivity="false">
-        <appender-ref ref="BUSINESS_FILE" />
-        <appender-ref ref="CONSOLE" />
-    </logger>
-
-    <!-- 拦截器日志 -->
-    <logger name="com.example.demo.config.interceptor.LogInterceptor" level="INFO" additivity="false">
-        <appender-ref ref="REQUEST_FILE" />
-        <appender-ref ref="CONSOLE" />
-    </logger>
-
-    <!-- Spring框架日志 -->
-    <logger name="org.springframework" level="WARN" />
-    <logger name="org.springframework.security" level="INFO" />
-    <logger name="org.springframework.web" level="INFO" />
-
-    <!-- 在 Loggers 部分添加 -->
-    <logger name="EXCEPTION_LOGGER" level="WARN" additivity="false">
-        <appender-ref ref="EXCEPTION_FILE" />
-        <appender-ref ref="CONSOLE" />
-    </logger>
     <!-- 根日志配置 -->
     <root level="INFO">
-        <appender-ref ref="CONSOLE" />
-        <appender-ref ref="FILE" />
-        <appender-ref ref="ERROR_FILE" />
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="ERROR_FILE"/>
     </root>
-
 </configuration>
